@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.face.application_shoptwo.Activity.KefuActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_important"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="比价机器人"
+                    android:textSize="20dp"
+                    android:textColor="@color/color_bgm"
+                    android:layout_margin="10dp"
+                    android:id="@+id/tv_btn"
+                    android:layout_centerInParent="true"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goback"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btn"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_below="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout"
+            android:fadingEdge="none"
+            android:background="#f0f0f0"
+            android:divider="#aaaaaa"
+            android:dividerHeight="0px">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="2dp"
+            android:id="@+id/layout">
+            <EditText
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question"
+                android:hint="您想咨询的问题是？" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_below="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_as"
+                android:background="@drawable/login_btn"
+                android:text="发送"
+                />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

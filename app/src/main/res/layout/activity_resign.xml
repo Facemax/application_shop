@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_resign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_default"
+    tools:context="com.example.face.application_shoptwo.Activity.ResignActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:paddingBottom="10dp"
+        android:id="@+id/relat"
+        android:background="@drawable/background_login_div">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/goback_login"
+            android:id="@+id/iv_goback"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <com.example.face.application_shoptwo.Activity.CircleImageview
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_head"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:border_width="2dp"
+            app:border_color="@color/color_important"
+            android:src="@mipmap/logo"/>
+        <EditText
+            android:id="@+id/re_et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:hint="请输入您的用户名"
+            android:gravity="center"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:id="@+id/re_et_password"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/re_et_name"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:password="true"
+            android:hint="请输入您的密码"
+            android:gravity="center"
+            android:ems="10"
+            android:maxLength="10"/>
+        <EditText
+            android:id="@+id/re_et_message"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/re_et_password"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:gravity="center"
+            android:hint="请输入您的个人信息"
+            android:ems="13"
+            android:maxLength="13"/>
+
+        <EditText
+            android:id="@+id/re_et_email"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/re_et_message"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:gravity="center"
+            android:hint="请输入您的电子邮箱"
+             />
+            <Button
+                android:layout_below="@id/re_et_email"
+                android:id="@+id/re_btn_resign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:textColor="@color/color_importantword"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_btn"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                />
+    </RelativeLayout>
+</RelativeLayout>

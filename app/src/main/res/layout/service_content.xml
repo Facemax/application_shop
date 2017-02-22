@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--<RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/background_login_div">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="客服中心"
+            android:textSize="30dp"
+            android:textColor="@color/color_important"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感谢您使用本软件，如果您在使用过程中遇到任何不便，或者有意见及建议都欢迎您反馈给我们。"
+            android:textColor="@color/color_importantword"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:layout_below="@+id/tv"
+            android:id="@+id/tv_c"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_c"
+            android:background="@drawable/btn_style"
+            android:layout_centerHorizontal="true"
+            android:text="确定"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/yes" />
+    </RelativeLayout>-->
+  <!--  <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_div"
+        android:paddingBottom="5dp"
+        android:id="@+id/alert">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感谢您使用本软件，如果您在使用过程中遇到任何不便，或者有意见及建议都欢迎您反馈给我们。"
+            android:textColor="@color/color_importantword"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:layout_below="@+id/linear"
+            android:id="@+id/tv_c"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            android:layout_below="@+id/tv_c"
+            android:layout_centerHorizontal="true"
+            android:text="确定"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn"/>
+    </RelativeLayout>-->
+
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="感谢您使用本软件，如果您在使用过程中遇到任何不便，或者有意见及建议都欢迎您反馈给我们。"
+                android:textColor="@color/color_importantword"
+                android:textSize="17dp"
+               android:layout_gravity="center"
+                android:id="@+id/tv_c"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes"
+                android:layout_gravity="center"
+                android:text="确定"
+                android:layout_margin="5dp"
+                android:background="@drawable/login_btn"/>
+        </LinearLayout>
+
+
+

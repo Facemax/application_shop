@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relat">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/linear"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电子邮箱:"
+                android:textColor="@color/color_ordinary"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123123123@qq.com"
+                android:id="@+id/tv_email"
+                android:textColor="@color/color_importantword"
+                />
+
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_newemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:hint="请输入您的电子邮箱"
+            android:gravity="center"
+            android:maxLength="35">
+
+        </EditText>
+
+
+        <Button
+            android:layout_below="@id/et_newemail"
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/color_importantword"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_btn"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

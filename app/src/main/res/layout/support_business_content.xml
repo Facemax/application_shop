@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_important"
+            android:id="@+id/linear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支持商家"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:textColor="@color/color_bgm"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+        <GridView
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:id="@+id/gridview"
+            android:numColumns="3"
+            android:columnWidth="90dp"
+            android:scrollbars="vertical"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:layout_below="@+id/linear"
+            android:layout_centerInParent="true"
+
+            >
+        </GridView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_yes"
+
+            android:layout_margin="5dp"
+            android:text="确定"
+            android:layout_gravity="center"
+            android:background="@drawable/login_btn"/>
+    </LinearLayout>
+
+
+
+
+
+

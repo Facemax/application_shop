@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f0f0"
+    android:paddingRight="80dip"
+    android:paddingLeft="8dip"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.face.application_shoptwo.Activity.CircleImageview
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/chatlist_image_other"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentLeft="true"
+            app:border_color="@color/color_important"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:id="@+id/me_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/chatlist_image_other"
+            android:text="Robot"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/chatlist_text_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:layout_toRightOf="@id/chatlist_image_other"
+            android:layout_alignTop="@id/chatlist_image_other"
+            android:background="@drawable/chat"
+            android:paddingTop="13dip"
+            android:paddingBottom="18dip"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__complex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.face.application_shoptwo.Activity.ComplexActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_simple_div"
+        android:id="@+id/frame"
+        android:padding="1dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear"
+            android:paddingTop="80dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+
+            >
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/simple_cancel_btn"
+                android:id="@+id/clear_button"
+                android:layout_alignParentLeft="true"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text"
+                android:layout_toRightOf="@+id/clear_button"
+                android:layout_toLeftOf="@+id/search_button"
+                android:layout_centerHorizontal="true"
+                android:hint="     请输入需要比价商品"
+                android:singleLine="true"
+                android:textColor="@color/color_importantword"
+                />
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_button"
+                android:layout_alignParentRight="true"
+
+                android:background="@drawable/simple_search_btn"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_pricemin"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:hint="最低价"
+                        android:inputType="number"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/heng"/>
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_width="80dp"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_pricemax"
+                        android:gravity="center"
+                        android:hint="最高价"
+                        android:inputType="number"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:entries="@array/orderby"
+                android:layout_below="@+id/linear1">
+            </Spinner>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear2"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/linear1">
+
+                <CheckBox
+                    android:text="自营"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ziying"
+                    android:textColor="#ff425d"
+                    />
+                <CheckBox
+                    android:text="淘宝数据"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taobao"
+                    android:textColor="#ff425d"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/frame"
+    android:orientation="vertical">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/listview">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shang"
+            android:background="@drawable/complex_up_btn"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_important"
+            android:id="@+id/tv_paper"
+            android:visibility="gone"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xia"
+            android:background="@drawable/complex_down_btn"
+            android:visibility="gone"/>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <com.wayww.edittextfirework.FireworkView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fire_work"
+        />
+</RelativeLayout>

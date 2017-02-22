@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f0f0f0"
+    android:paddingLeft="80dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip">
+
+    <com.example.face.application_shoptwo.Activity.CircleImageview
+        android:id="@+id/chatlist_image_me"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="5dip"
+
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/logo"/>
+    <TextView
+        android:id="@+id/me_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您"
+        android:layout_marginLeft="18dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/chatlist_image_me"
+        android:layout_alignStart="@+id/chatlist_image_me" />
+
+    <EditText
+        android:id="@+id/chatlist_text_me"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/chatlist_image_me"
+        android:layout_alignTop="@id/chatlist_image_me"
+        android:background="@drawable/chatto_bg_normal"
+        android:paddingTop="13dip"
+        android:paddingBottom="18dip"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

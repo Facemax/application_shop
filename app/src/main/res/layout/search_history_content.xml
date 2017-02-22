@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_div"
+        android:paddingBottom="5dp"
+        android:id="@+id/alert">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索历史"
+                android:textSize="25dp"
+                android:textColor="@color/color_important"/>
+        </LinearLayout>
+        <ListView
+            android:layout_below="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/listview"
+            android:layout_centerInParent="true"
+            >
+
+        </ListView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_yes"
+            android:layout_below="@+id/listview"
+            android:layout_centerHorizontal="true"
+            android:text="确定"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn"/>
+    </RelativeLayout>
+</LinearLayout>

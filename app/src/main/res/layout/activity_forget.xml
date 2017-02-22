@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_default"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.face.application_shoptwo.Activity.ForgetActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/relat"
+        android:background="@drawable/background_login_div">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/goback_login"
+            android:id="@+id/iv_goback"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <com.example.face.application_shoptwo.Activity.CircleImageview
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_head"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:border_width="2dp"
+            app:border_color="@color/color_important"
+            android:src="@mipmap/logo"/>
+        <EditText
+            android:id="@+id/et_forgetemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:hint="请输入注册账号邮箱"
+            android:gravity="center"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+
+
+        <Button
+            android:layout_below="@id/et_forgetemail"
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/color_importantword"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_btn"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

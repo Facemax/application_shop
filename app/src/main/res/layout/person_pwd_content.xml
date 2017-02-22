@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:paddingBottom="5dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relat">
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:hint="请输入您的旧密码"
+                android:gravity="center"
+                android:password="true"
+                android:maxLength="15">
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/newpwd"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/pwd"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+
+                android:singleLine="true"
+                android:password="true"
+                android:hint="请输入您的新密码"
+                android:gravity="center"
+                android:maxLength="15" />
+            <EditText
+                android:id="@+id/newpwds"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/newpwd"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:gravity="center"
+                android:password="true"
+                android:hint="请再次输入您的新密码"
+                android:maxLength="15" />
+
+            <Button
+                android:layout_below="@id/newpwds"
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/color_importantword"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_btn"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+

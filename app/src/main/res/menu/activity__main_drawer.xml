@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/simple_shop"
+            android:icon="@drawable/simpleicon_focus"
+            android:title="简单比价模式"
+            />
+        <item
+            android:id="@+id/complex_shop"
+            android:icon="@drawable/complexicon_focus"
+            android:title="复杂比价模式" />
+        <item
+            android:id="@+id/support_business"
+            android:icon="@drawable/supportshop"
+            android:title="支持商家" />
+        <item
+            android:id="@+id/collect"
+            android:icon="@drawable/collecticon_focus"
+            android:title="商品收藏" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/searchs"
+            android:title="搜索历史" />
+    </group>
+
+    <item android:title="--基础设置--">
+        <menu>
+            <item
+                android:id="@+id/personal_information"
+                android:icon="@drawable/personicon_focus"
+                android:title="个人信息" />
+            <item
+            android:id="@+id/customer_service_center"
+            android:icon="@drawable/service_send"
+            android:title="应用反馈" />
+            <item
+                android:id="@+id/rootb"
+                android:icon="@drawable/robot"
+                android:title="比价robot" />
+            <item
+                android:id="@+id/cancellation"
+                android:icon="@drawable/cancel"
+                android:title="注销登录" />
+            <item
+                android:id="@+id/back"
+                android:icon="@drawable/exitsoft"
+                android:title="退出软件" />
+        </menu>
+    </item>
+
+</menu>
